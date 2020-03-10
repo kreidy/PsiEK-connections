@@ -170,23 +170,30 @@ var members = {
 
 };
 
+
 // populate connections
 for (const memberKey in members) {
   member = members[memberKey];
   var bigSister = members[member.bigSister];
   var bigBrother = members[member.bigBrother];
 
-  if (bigSister != undefined)
-    bigSister.addConnection(member);
+  if (bigSister == undefined) {
+    members[member.bigSister] = new Member(member.bigSister, "", "");
+    bigSister = members[member.bigSister];
+  }
+  bigSister.addConnection(member);
 
-  if (bigBrother != undefined)
-    bigBrother.addConnection(member);
+  if (bigBrother == undefined) {
+    members[member.bigBrother] = new Member(member.bigBrother, "", "");
+    bigBrother = members[member.bigBrother];
+  }
+  bigBrother.addConnection(member);
 }
 
+
+// start search
 var path = [];
 var depth;
-
-
 
 function recursive_connect(member1, member2, maxdepth) {
   path.push(member1);
@@ -231,7 +238,7 @@ function prettyFormat() {
 }
 
 // main
-if (connect(members["Kyle Reidy"], members["Jacob Re"]))
+if (connect(members["Sarah Jensen"], members["Kyle Reidy"]))
   console.log(prettyFormat());
 else
   console.log("No connection found");
