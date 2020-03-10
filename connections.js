@@ -25,6 +25,8 @@ members["Matthew Espinoza"] = new Member("Matthew Espinoza",
 var path = [];
 
 function connect(member1, member2) {
+  path.push(member1);
+
   // base case
   if (member1.isConnectedTo(member2)) {
     path.push(member2);
@@ -38,17 +40,26 @@ function connect(member1, member2) {
 
     member = members[name];
 
-    path.push(member);
     if (connect(member, member2)) {
       return true;
     }
-    path.pop(member);
   }
 
+  path.pop();
   return false;
 }
 
+function prettyFormat() {
+  console.log(path);
+  var fullString = path[0].name;
+  console.log(path.slice(1));
+  for (const member of path.slice(1)) {
+    console.log(member);
+    fullString += " -> " + member.name
+  }
+  return fullString;
+}
 
 // main
-console.log(connect(members["Kyle Reidy"], members["Matthew Espinoza"]));
-console.log(path);
+connect(members["Kyle Reidy"], members["Matthew Espinoza"]);
+console.log(prettyFormat());
