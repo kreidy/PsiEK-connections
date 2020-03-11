@@ -49,7 +49,7 @@ var members = {
   "Andy Nguyen":          new Member("Andy Nguyen", sister, "Sarah Jensen", "Justin Nguyen"),
   "Aylin Henstridge":     new Member("Aylin Henstridge", sister, "Natalie Aranda", "Sidney Kantono"),
   "Collin Lantz":         new Member("Collin Lantz", sister, "Martin Trang", "Keegan Fowler"),
-  "Daniela Hernandez":    new Member("Daniela Hernandez", sister, "Kelly Flood", "Haley Nelson"),
+  "Daniela Hernandez":    new Member("Daniela Hernandez", sister, "Kelly Flood", "Haley Breland"),
   "Emma Atkins":          new Member("Emma Atkins", sister, "Tabetha Van Heest", "Chris Routh"),
   "Ethan Brandt":         new Member("Ethan Brandt", sister, "Emma Suchard", "Harry Mitchell"),
   "James Eichenbaum":     new Member("James Eichenbaum", sister, "Shelby Olson", "Omer Lavian"),
