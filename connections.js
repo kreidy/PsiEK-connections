@@ -29,6 +29,7 @@ var members = {
   "Julianne Zingmond":    new Member("Julianne Zingmond", sister, "Kathleen Oliphant", null),
 
   // KKPsi Beta Upsilon
+  "Sofia Alemania":       new Member("Sofia Alemania", brother, "Kaitlyn Watkins", "Tia Liu"),
   "Casey Armstrong":      new Member("Casey Armstrong", brother, "Shayna Warner", "Jacob Hambalek"),
   "Haley Breland":        new Member("Haley Breland", brother, "Kathleen Oliphant", "Amanda Albini"),
   "Matthew Chin":         new Member("Matthew Chin", brother, "Sharla Barlan", "Nishi Intwala"),
