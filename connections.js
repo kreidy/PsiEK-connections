@@ -282,8 +282,11 @@ function printPath(path) {
 
 // main
 function connectMembers() {
-  var member1 = selectMember1.options[selectMember1.selectedIndex].text;
-  var member2 = selectMember2.options[selectMember2.selectedIndex].text;
+  var member1 = selectMember1.options[selectMember1.selectedIndex].value;
+  var member2 = selectMember2.options[selectMember2.selectedIndex].value;
+  if (member1 == "null" || member2 == "null") {
+    return;
+  }
   path = [];
   connect(members[member1], members[member2]);
   document.getElementById("count").innerHTML =
