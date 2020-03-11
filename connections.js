@@ -194,7 +194,25 @@ for (const memberKey in members) {
 }
 
 
-// start search
+// add options to select menus
+var selectMember1 = document.getElementById('selectMember1');
+var selectMember2 = document.getElementById('selectMember2');
+
+function addNameAsOption(memberName, selectElement) {
+  var opt = document.createElement('option');
+  opt.appendChild( document.createTextNode(memberName) );
+  opt.value = memberName;
+  selectElement.appendChild(opt);
+}
+
+for (const memberKey in members) {
+  memberName = members[memberKey].name;
+  addNameAsOption(memberName, selectMember1);
+  addNameAsOption(memberName, selectMember2);
+}
+
+
+// search implementation
 var path = [];
 var depth;
 
@@ -232,7 +250,11 @@ function connect(member1, member2) {
   }
 }
 
-function printPath() {
+function printPath(path) {
+  if (path.length == 0) {
+    return "No connection found"
+  }
+
   var fullString = "";
   for (let i = 0; i < path.length - 1; i++) {
     var currentMember = path[i];
@@ -246,13 +268,16 @@ function printPath() {
     var sisterOrBrother = isSister ? "Sister " : "Brother ";
 
     fullString += currentMember.name + "'s " + bigOrLittle + sisterOrBrother
-                  + "is " + nextMember.name + "\n";
+                  + "is " + nextMember.name + "<br>";
   }
   return fullString;
 }
 
 // main
-if (connect(members["Kyle Reidy"], members["Chris Calles"]))
-  console.log(printPath());
-else
-  console.log("No connection found");
+function connectMembers() {
+  var member1 = selectMember1.options[selectMember1.selectedIndex].text;
+  var member2 = selectMember2.options[selectMember2.selectedIndex].text;
+  path = [];
+  connect(members[member1], members[member2]);
+  document.getElementById("connections").innerHTML = printPath(path);
+}
