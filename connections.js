@@ -7,6 +7,8 @@ class Member {
   }
 
   isConnectedTo(member2) {
+    if (member2 == null)
+      return false;
     return this.connections.includes(member2.name);
   }
 
@@ -178,13 +180,13 @@ for (const memberKey in members) {
   var bigBrother = members[member.bigBrother];
 
   if (bigSister == undefined) {
-    members[member.bigSister] = new Member(member.bigSister, "", "");
+    members[member.bigSister] = new Member(member.bigSister, null, null);
     bigSister = members[member.bigSister];
   }
   bigSister.addConnection(member);
 
   if (bigBrother == undefined) {
-    members[member.bigBrother] = new Member(member.bigBrother, "", "");
+    members[member.bigBrother] = new Member(member.bigBrother, null, null);
     bigBrother = members[member.bigBrother];
   }
   bigBrother.addConnection(member);
@@ -238,7 +240,7 @@ function prettyFormat() {
 }
 
 // main
-if (connect(members["Sarah Jensen"], members["Kyle Reidy"]))
+if (connect(members["Chris Calles"], members["Melissa Perrin"]))
   console.log(prettyFormat());
 else
   console.log("No connection found");
