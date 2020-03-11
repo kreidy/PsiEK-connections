@@ -205,13 +205,17 @@ function addNameAsOption(memberName, selectElement) {
   selectElement.appendChild(opt);
 }
 
+var namesArray = [];
 for (const memberKey in members) {
-  memberName = members[memberKey].name;
-  if (memberName == null) {
+  namesArray.push(members[memberKey].name)
+}
+namesArray.sort();
+for (name of namesArray) {
+  if (name == "null") {
     continue;
   }
-  addNameAsOption(memberName, selectMember1);
-  addNameAsOption(memberName, selectMember2);
+  addNameAsOption(name, selectMember1);
+  addNameAsOption(name, selectMember2);
 }
 
 
