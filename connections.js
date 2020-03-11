@@ -34,7 +34,7 @@ var members = {
   "Matthew Chin":         new Member("Matthew Chin", brother, "Sharla Barlan", "Nishi Intwala"),
   "Vito Emanuel":         new Member("Vito Emanuel", brother, "Susie Carlos", "John Malchar"),
   "Daniel Fernandez":     new Member("Daniel Fernandez", brother, "Connie Chen", "David Egen"),
-  "Keegan Fowler":        new Member("Keegan Fowler", brother, "Sam Chavez", "Michie Leccesse"),
+  "Keegan Fowler":        new Member("Keegan Fowler", brother, "Sam Chavez", "Michie Leccese"),
   "Eduardo Gordiano":     new Member("Eduardo Gordiano", brother, "Angelica Rodriguez", "Vy Giap"),
   "Omer Lavian":          new Member("Omer Lavian", brother, "Jenny Lindell", "Annie Cheng"),
   "Jade McVay":           new Member("Jade McVay", brother, "Shannon Miner", "Sophia Inaba"),
@@ -207,6 +207,9 @@ function addNameAsOption(memberName, selectElement) {
 
 for (const memberKey in members) {
   memberName = members[memberKey].name;
+  if (memberName == null) {
+    continue;
+  }
   addNameAsOption(memberName, selectMember1);
   addNameAsOption(memberName, selectMember2);
 }
