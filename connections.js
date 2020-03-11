@@ -29,7 +29,7 @@ var members = {
   "Julianne Zingmond":    new Member("Julianne Zingmond", sister, "Kathleen Oliphant", null),
 
   // KKPsi Beta Upsilon
-  "Sofia Alemania":       new Member("Sofia Alemania", "Kaitlyn Watkins", "Tia Liu")
+  "Sofia Alemania":       new Member("Sofia Alemania", brother, "Kaitlyn Watkins", "Tia Liu"),
   "Casey Armstrong":      new Member("Casey Armstrong", brother, "Shayna Warner", "Jacob Hambalek"),
   "Haley Breland":        new Member("Haley Breland", brother, "Kathleen Oliphant", "Amanda Albini"),
   "Matthew Chin":         new Member("Matthew Chin", brother, "Sharla Barlan", "Nishi Intwala"),
@@ -132,7 +132,7 @@ var members = {
   "Niels Dawson":         new Member("Niels Dawson", sister, "Aylin Henstridge", "Kevin Reidy"),
   "Pamela Jansen":        new Member("Pamela Jansen", sister, "Madelyn Armes", "Naveed Zaman"),
   "Raghu Tekumalla":      new Member("Raghu Tekumalla", sister, "Chris Calles", "Katie Osborn"),
-  "Ryo Shiratori ":       new Member("Ryo Shiratori ", sister, "Cheyenne Suzukawa", "David Matter"),
+  "Ryo Shiratori":       new Member("Ryo Shiratori", sister, "Cheyenne Suzukawa", "David Matter"),
   "Sophie Robbins":       new Member("Sophie Robbins", sister, "Elizabeth Gallmeister", "Gabriel Ramirez"),
   "Tess Bo-Lin Louie":    new Member("Tess Bo-Lin Louie", sister, "Sierra Talbert", "Ryan Lee"),
   "Victoria Sanchez":     new Member("Victoria Sanchez", sister, "Paolo Gaudiel", "Emily Davis"),
