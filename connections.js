@@ -282,5 +282,7 @@ function connectMembers() {
   var member2 = selectMember2.options[selectMember2.selectedIndex].text;
   path = [];
   connect(members[member1], members[member2]);
+  document.getElementById("count").innerHTML =
+    "Your PsiEK Number is " + (path.length - 1) + "!";
   document.getElementById("connections").innerHTML = printPath(path);
 }
