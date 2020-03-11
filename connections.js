@@ -123,7 +123,7 @@ var members = {
   "Erik Tompkins":        new Member("Erik Tompkins", sister, "Johnny Urosevic", "Emma Boone"),
   "Ethan Chen":           new Member("Ethan Chen", sister, "Diana Greenwood", "Ivy Kwok"),
   "Gerald":               new Member("Gerald", sister, "Blanca Carla Arriaga", "Evelyn Coffey"),
-  "Ivan Briceño":         new Member("Ivan Briceño", sister, "Yahaira Cortez", "Erica Vellanoweth"),
+  "Ivan Briceno":         new Member("Ivan Briceno", sister, "Yahaira Cortez", "Erica Vellanoweth"),
   "Jared Yuge":           new Member("Jared Yuge", sister, "Ethan Kim", "Jeffrey Lin"),
   "Katy Rucker":          new Member("Katy Rucker", sister, "Kyle Reidy", "Matthew Espinoza"),
   "Lorraine Katherine Sim":                    new Member("Lorraine Katherine Sim", sister, "Leo Pfeiffer", "Daniel Fernandez"),
@@ -141,7 +141,7 @@ var members = {
 
   // KKPsi Beta Psi
   "Nellie Kamenitsa-Hale":new Member("Nellie Kamenitsa-Hale", brother, "Martin Trang", "Adam Pingatore"),
-  "Saúl Gutierrez":       new Member("Saúl Gutierrez", brother, "Justin Cole", "Carrie Appel"),
+  "Saul Gutierrez":       new Member("Saul Gutierrez", brother, "Justin Cole", "Carrie Appel"),
   "Frances Kroll":        new Member("Frances Kroll", brother, "Sierra Talbert", "Casey Armstrong"),
   "Ken Hollingsworth":    new Member("Ken Hollingsworth", brother, "Collin Lantz", "Chris Badroos"),
   "Matt Sanruk":          new Member("Matt Sanruk", brother, "Chris Calles", "Daniel Adea"),
@@ -247,7 +247,7 @@ function recursive_connect(member1, member2, maxdepth) {
 }
 
 function connect(member1, member2) {
-  for (depth = 0; depth < 20; depth++) {
+  for (depth = 0; depth < 12; depth++) {
     if (recursive_connect(member1, member2, depth))
       return true;
   }
