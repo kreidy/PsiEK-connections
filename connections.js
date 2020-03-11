@@ -287,9 +287,19 @@ function connectMembers() {
   if (member1 == "null" || member2 == "null") {
     return;
   }
-  path = [];
-  connect(members[member1], members[member2]);
-  document.getElementById("count").innerHTML =
-    "Your PsiEK Number is " + (path.length - 1) + "!";
-  document.getElementById("connections").innerHTML = printPath(path);
+  if (member1 == member2) {
+    document.getElementById("count").innerHTML =
+      "Your PsiEK Number is 0!";
+    document.getElementById("connections").innerHTML = "";
+    if (member1 == "Keegan Fowler") {
+      document.getElementById("connections").innerHTML = "Keegan is Keegan, you idiot"
+    }
+  }
+  else {
+    path = [];
+    connect(members[member1], members[member2]);
+    document.getElementById("count").innerHTML =
+      "Your PsiEK Number is " + (path.length - 1) + "!";
+    document.getElementById("connections").innerHTML = printPath(path);
+  }
 }
