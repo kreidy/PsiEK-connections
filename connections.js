@@ -61,7 +61,7 @@ var members = {
   "Sara Acosta":          new Member("Sara Acosta", brother, "Julianne Zingmond", "Jade McVay"),
   "Daniel Adea":          new Member("Daniel Adea", brother, "Kelly Vines", "Matthew Chin"),
   "Emma Boone":           new Member("Emma Boone", brother, "Marcus Veal", "Chris Routh"),
-  "Ethan Cai":            new Member("Ethan Cai", brother, "Sarah Jenson", "Justin Nguyen"),
+  "Ethan Cai":            new Member("Ethan Cai", brother, "Sarah Jensen", "Justin Nguyen"),
   "Ronnie Chase":         new Member("Ronnie Chase", brother, "Shelby Olson", "Harry Mitchell"),
   "Renu Chepuru":         new Member("Renu Chepuru", brother, "Kyle Reidy", "Joey Auer"),
   "Emily Davis":          new Member("Emily Davis", brother, "Kelly Flood", "Sofia Alemania"),
