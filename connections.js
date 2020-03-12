@@ -119,7 +119,7 @@ var members = {
 
   // TBS Alpha Omega
   "Cecilia Luisa Porras": new Member("Cecilia Luisa Porras", sister, "Shruti Indiresan", "Gus Billing"),
-  "Deborah Gallego":      new Member("Deborah Gallego", sister, "Jazmin Aguila", "Justin"),
+  "Deborah Gallego":      new Member("Deborah Gallego", sister, "Jazmin Aguila", "Justin Wolfman"),
   "Elija Balanga":        new Member("Elija Balanga", sister, "Andy Nguyen", "Matthew Chin"),
   "Elizabeth Gulli":      new Member("Elizabeth Gulli", sister, "Melissa Perrin", "Casey Armstrong"),
   "Erik Tompkins":        new Member("Erik Tompkins", sister, "Johnny Urosevic", "Emma Boone"),
@@ -303,5 +303,9 @@ function connectMembers() {
     document.getElementById("count").innerHTML =
       "Your PsiEK Number is " + (path.length - 1) + "!";
     document.getElementById("connections").innerHTML = printPath(path);
+  }
+
+  for (const key of Object.keys(members)) {
+    console.log(key)
   }
 }
