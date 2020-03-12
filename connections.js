@@ -73,6 +73,7 @@ var members = {
   "Emily Liu":            new Member("Emily Liu", brother, "Claire Locke", "Samantha Ono"),
   "David Matter":         new Member("David Matter", brother, "Kathleen Oliphant", "Keegan Fowler"),
   "Katie Osborn":         new Member("Katie Osborn", brother, "Nique Stumbaugh", "Abby McCallum"),
+  "Christopher Qiu":      new Member("Christopher Qiu", brother, "Martin Trang", "Vito Emanuel"),
   "David Thorne":         new Member("David Thorne", brother, "Sarah Truax", "Michael Stranieri"),
   "Chelsy Torres":        new Member("Chelsy Torres", brother, "Cheyenne Suzukawa", "Michie Leccese"),
   "Erica Vellanoweth":    new Member("Erica Vellanoweth", brother, "Julianne Zingmond", "Casey Armstrong"),
