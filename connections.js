@@ -73,6 +73,7 @@ var members = {
   "Emily Liu":            new Member("Emily Liu", brother, "Claire Locke", "Samantha Ono"),
   "David Matter":         new Member("David Matter", brother, "Kathleen Oliphant", "Keegan Fowler"),
   "Katie Osborn":         new Member("Katie Osborn", brother, "Nique Stumbaugh", "Abby McCallum"),
+  "Christopher Qiu":      new Member("Christopher Qiu", brother, "Martin Trang", "Vito Emanuel"),
   "David Thorne":         new Member("David Thorne", brother, "Sarah Truax", "Michael Stranieri"),
   "Chelsy Torres":        new Member("Chelsy Torres", brother, "Cheyenne Suzukawa", "Michie Leccese"),
   "Erica Vellanoweth":    new Member("Erica Vellanoweth", brother, "Julianne Zingmond", "Casey Armstrong"),
@@ -118,12 +119,12 @@ var members = {
 
   // TBS Alpha Omega
   "Cecilia Luisa Porras": new Member("Cecilia Luisa Porras", sister, "Shruti Indiresan", "Gus Billing"),
-  "Deborah Gallego":      new Member("Deborah Gallego", sister, "Jazmin Aguila", "Justin"),
+  "Deborah Gallego":      new Member("Deborah Gallego", sister, "Jazmin Aguila", "Justin Wolfman"),
   "Elija Balanga":        new Member("Elija Balanga", sister, "Andy Nguyen", "Matthew Chin"),
   "Elizabeth Gulli":      new Member("Elizabeth Gulli", sister, "Melissa Perrin", "Casey Armstrong"),
   "Erik Tompkins":        new Member("Erik Tompkins", sister, "Johnny Urosevic", "Emma Boone"),
   "Ethan Chen":           new Member("Ethan Chen", sister, "Diana Greenwood", "Ivy Kwok"),
-  "Gerald":               new Member("Gerald", sister, "Blanca Carla Arriaga", "Evelyn Coffey"),
+  "Gerald Bernal":        new Member("Gerald Bernal", sister, "Blanca Carla Arriaga", "Evelyn Coffey"),
   "Ivan Briceno":         new Member("Ivan Briceno", sister, "Yahaira Cortez", "Erica Vellanoweth"),
   "Jared Yuge":           new Member("Jared Yuge", sister, "Ethan Kim", "Jeffrey Lin"),
   "Katy Rucker":          new Member("Katy Rucker", sister, "Kyle Reidy", "Matthew Espinoza"),
@@ -132,11 +133,11 @@ var members = {
   "Niels Dawson":         new Member("Niels Dawson", sister, "Aylin Henstridge", "Kevin Reidy"),
   "Pamela Jansen":        new Member("Pamela Jansen", sister, "Madelyn Armes", "Naveed Zaman"),
   "Raghu Tekumalla":      new Member("Raghu Tekumalla", sister, "Chris Calles", "Katie Osborn"),
-  "Ryo Shiratori":       new Member("Ryo Shiratori", sister, "Cheyenne Suzukawa", "David Matter"),
+  "Ryo Shiratori":        new Member("Ryo Shiratori", sister, "Cheyenne Suzukawa", "David Matter"),
   "Sophie Robbins":       new Member("Sophie Robbins", sister, "Elizabeth Gallmeister", "Gabriel Ramirez"),
   "Tess Bo-Lin Louie":    new Member("Tess Bo-Lin Louie", sister, "Sierra Talbert", "Ryan Lee"),
   "Victoria Sanchez":     new Member("Victoria Sanchez", sister, "Paolo Gaudiel", "Emily Davis"),
-  "Xitlaly":              new Member("Xitlaly", sister, "Emma Atkins", "Adam Pingatore"),
+  "Xitlaly Lopez":        new Member("Xitlaly Lopez", sister, "Emma Atkins", "Adam Pingatore"),
   "Yoselin Lizeth Guzman Herrera":             new Member("Yoselin Lizeth Guzman Herrera", sister, "Blanca Carla Arriaga", "Meigan Wu"),
   "Zachary Judson":       new Member("Zachary Judson", sister, "Ethan Brandt", "Daniel Adea"),
 
@@ -302,5 +303,9 @@ function connectMembers() {
     document.getElementById("count").innerHTML =
       "Your PsiEK Number is " + (path.length - 1) + "!";
     document.getElementById("connections").innerHTML = printPath(path);
+  }
+
+  for (const key of Object.keys(members)) {
+    console.log(key)
   }
 }
