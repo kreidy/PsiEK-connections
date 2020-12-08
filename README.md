@@ -6,3 +6,5 @@ to other members through our extended family trees.
 I implemented the search as an iterative deepening search, so that it would
 always find the shortest connection between two members while also being
 time and space efficient.
+
+To see the project in action, go to: <http://kreidy.me/PsiEK-connections/connections.html>
